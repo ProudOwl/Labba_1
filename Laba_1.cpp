@@ -15,11 +15,11 @@ double diagonal(double top, double left){
 
 int main(){
 double top = 0, down, left = 0, right;
-while (top <= 0) {
+while (top <= 0|| top ) {
     cout << "Введите большую сторону прямоугольника ";
     cin >> top;
 }
-down = top;
+down = top; // две стороны равны
 while (left <= 0) {
     cout << "Введите меньшую сторону прямоугольника ";
     cin >> left;
