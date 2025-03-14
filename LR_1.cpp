@@ -30,7 +30,7 @@ int main(){
 	}
 	
         height = sqrt(pow(wall_left, 2) - pow(((pow((down-top), 2) + pow(wall_left, 2) - pow(wall_right, 2)) / (2*(down-top))),2));
-        if (top>=(down+wall_left+wall_right) || down >= (top+wall_left+wall_right) || wall_left>= (top+down+wall_right) || wall_right >= (top+down+wall_left) || height == 0){
+        if (top>=(down+wall_left+wall_right) || down >= (top+wall_left+wall_right) || wall_left>= (top+down+wall_right) || wall_right >= (top+down+wall_left) || height == 0 || (down<=top)){
 	cout<<"Такой трапеции не существует!!!";
 	return 0;
         }
